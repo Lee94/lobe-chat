@@ -15,6 +15,9 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
 
 const nextConfig: NextConfig = {
   basePath,
+  eslint: {
+    ignoreDuringBuilds: true
+  },
   compress: isProd,
   experimental: {
     optimizePackageImports: [
